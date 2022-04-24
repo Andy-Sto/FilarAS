@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ff5;
+    
+}
+a {
+    text-decoration: none;
+    color: #f55;
+}
+a:hover {
+    color: rgb(253, 29, 29);
+}
+ul li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    text-align: center;
+    margin: 10px 0 10px 50px;
+    padding: 15px;
+    font-size: 21px;
+    border: 2px solid;
+    border-radius: 15px 0 15px 0;
+}
+ul  li:first-child {
+    width:20%;
+  }
+  ul  li:first-child + li {
+    width:20%;
+  } 
+  ul  li:first-child + li + li {
+    width:20%;
+  }
+  ul  li:first-child + li + li + li {
+    width:20%;
+  }
+.clearboth {
+    clear: both;
+}
+h2 {
+    text-align: center;
+}
+.toplogo img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-areas: 
+    "k z p"
+    "f o p"
+    "s s s";
+    gap: 20px;
+}
+.zaproszenie {
+    grid-area: z;
+    background: #f55;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 15px 0 15px 0;
+    text-align: center;
+}
+.zaproszenie img {
+    width: 100%;
+    height: auto;
+}
+.ofirmie {
+    grid-area: o;
+    background: #f55;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 15px 0 15px 0;
+    text-align: center;
+}
+.ofirmie img {
+    width: 100%;
+    height: auto;
+}
+.kontakt {
+    grid-area: k;
+    color: #f55;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 15px 0 15px 0;
+    text-align: center;
+}
+.social {
+    grid-area: f;
+    color: #f55;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 15px 0 15px 0;
+    text-align: center;
+}
+.partnerzy {
+    grid-area: p;
+    color: #f55;
+    padding: 20px;
+    border-radius: 15px 0 15px 0;
+}
+.partnerlogo img {
+    width: 100%;
+    height: auto;
+}
+.stopka {
+    grid-area: s;
+    background: #f55;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 0 15px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "z"
+        "o"
+        "k"
+        "f";
+        width: 100%;
+    }
+    .menu {
+        display: none;
+    }
+    .partnerzy {
+        display: none;
+    }
+}
